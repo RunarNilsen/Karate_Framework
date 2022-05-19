@@ -1,5 +1,5 @@
 Feature: get user token
-  @Test
+
     Scenario: get one user token
       Given url 'https://cybertek-reservation-api-qa3.herokuapp.com/'
       And path 'sign'

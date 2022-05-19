@@ -3,7 +3,7 @@ Feature: Bookit Api tests
     Background:
       * def baseUrl = 'https://cybertek-reservation-api-qa2.herokuapp.com/'
       #point another feature file
-      * def AuthFeature = call read('classpath:features/BookItAuth.feature')
+      * def AuthFeature = call read('classpath:features/F-BookItAuth.feature')
       * def accessToken = AuthFeature.token
       * def firstname = AuthFeature.name
       * print firstname
@@ -18,7 +18,7 @@ Feature: Bookit Api tests
         When method GET
         Then status 200
         And print response
-        And match response == {"id":57,"firstName":"Ase","lastName":"Norval","role":"student-team-leader"}
+        And match response == {"id":140,"firstName":"Arluene","lastName":"Reolfo","role":"student-team-leader"}
 
 
 
